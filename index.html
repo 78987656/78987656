@@ -1,41 +1,41 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>78987656</title>
 </head>
 <body>
     <script>
         const pw = "nuggets";
-        const pwa = window.prompt("78987656");
+        const pwa = window.prompt("Enter the password:");
 
-        if (pwa === pwa) {
-            window.open('howdy','_blank');
-        }
+        if (pwa === pw) {
+            const newWindow = window.open("about:blank", "_blank");
 
-        if (newWindow) {
-    const iframeSrc = "https://78987656.github.io/78987656/f.html";
+            if (newWindow) {
+                const iframeSrc = "https://78987656.github.io/78987656/f.html";
 
                 const html = `
-                <!DOCTYPE html>
-                <html>
-                <head>
-                    <title>Secured Page</title>
-                    <style>
-                    html, body {
-                        margin: 0;
-                        padding: 0;
-                        height: 100%;
-                    }
-                    iframe {
-                        width: 100%;
-                        height: 100%;
-                        border: none;
-                    }
-                    </style>
-                </head>
-                <body>
-                    <iframe src="${iframeSrc}"></iframe>
-                </body>
-                </html>
+                    <!DOCTYPE html>
+                    <html>
+                    <head>
+                        <title>Secured Page</title>
+                        <style>
+                            html, body {
+                                margin: 0;
+                                padding: 0;
+                                height: 100%;
+                            }
+                            iframe {
+                                width: 100%;
+                                height: 100%;
+                                border: none;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        <iframe src="${iframeSrc}"></iframe>
+                    </body>
+                    </html>
                 `;
 
                 newWindow.document.write(html);
@@ -43,11 +43,13 @@
             } else {
                 alert("Popup blocked. Please allow popups for this site.");
             }
-            else {
-            alert("Access Denied. Incorrect password.");
-            }
+        } else {
+            alert("Incorrect password.");
+        }
     </script>
+
     <center>
         <h1>78987656</h1>
     </center>
 </body>
+</html>
