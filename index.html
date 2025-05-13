@@ -8,24 +8,43 @@
         const pwa = window.prompt("78987656");
 
         if (pwa === pwa) {
-            window.open('','_blank');
+            window.open('howdy','_blank');
         }
 
         if (newWindow) {
-        const iframeHTML = `
-        <!DOCTYPE html>
-        <html>
-        <head><title>Secure Page</title></head>
-        <body style="margin:0;">
-            <iframe src="f.html" style="width:100vw; height:100vh; border:none;"></iframe>
-        </body>
-        </html>
-        `;
+    const iframeSrc = "https://78987656.github.io/78987656/f.html";
 
-                newWindow.document.write(iframeHTML);
+                const html = `
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <title>Secured Page</title>
+                    <style>
+                    html, body {
+                        margin: 0;
+                        padding: 0;
+                        height: 100%;
+                    }
+                    iframe {
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                    }
+                    </style>
+                </head>
+                <body>
+                    <iframe src="${iframeSrc}"></iframe>
+                </body>
+                </html>
+                `;
+
+                newWindow.document.write(html);
                 newWindow.document.close();
             } else {
                 alert("Popup blocked. Please allow popups for this site.");
+            }
+            else {
+            alert("Access Denied. Incorrect password.");
             }
     </script>
     <center>
